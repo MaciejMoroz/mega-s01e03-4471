@@ -1,0 +1,44 @@
+---
+layout: runbook
+title: '4471 · what it shows: two causes, one ticket'
+owner: maciej.moroz
+status: review
+reviewed: 2026-10-28
+signature: maciej.moroz
+---
+
+The desk merged **412 reports** into #4471 and marked it known as one issue: the parser
+reads dates month first. The export shows two causes, not one. They share a symptom —
+a booking lands on the wrong day — and nothing else.
+
+## The two causes
+
+<CauseTable ticket={4471} />
+
+- **parser** — the shared parser reads every date month first. All 11 tenants, any channel.
+  This is the known issue; the fix is queued.
+- **hint** — the `booking-v3` form prints `MM/DD/YYYY` under its date field, but the form
+  reads the date the tenant's way: day first. Only Alder Physio, Copper Studio and Pale
+  Harbour (all on `booking-v3`), only reports sent through the form. A different bug with
+  no ticket of its own: it was merged into #4471 by subject.
+
+## Why they were merged
+
+Dedupe matches subject lines ([decision 0001](/kb/decisions/0001-dedupe-by-subject)).
+"Wrong day", "invite is wrong", "dates mixed up" — both bugs produce those subjects.
+Fast during an incident, and blind to cause: reading the bodies is what separates them.
+
+## What the export adds up to
+
+The export has 427 rows and 412 reports: the ticket system pages overlap and 15 ids come
+twice. Counted once, the 412 split exactly into the two causes above. Intake's guess
+(`intakeTag`) disagrees with the cause on 38 reports — the table's *tagged as* column shows
+both guesses; the cause comes from the tenant's locale and form, not the reporter's browser.
+Five reports the desk read as a one-day move are filed under their cause by tenant.
+
+## Lessons
+
+- A big ticket is mostly one bug reported many times — but not always only one bug.
+- A count per ticket is honest only when every cause in the ticket has its own count.
+
+<RenderStamp {signature} />

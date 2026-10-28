@@ -1,0 +1,49 @@
+{
+  "parser": {
+    "n": 379,
+    "t": {
+      "harbour.dental": 52,
+      "kettle.books": 47,
+      "lantern.row": 28,
+      "morrow.tax": 40,
+      "long.table": 39,
+      "ridge.clinic": 36,
+      "alder.physio": 23,
+      "pale.harbour": 21,
+      "copper.studio": 19,
+      "nine.lanterns": 44,
+      "stone.and.sons": 30
+    },
+    "ch": {
+      "app": 204,
+      "email": 150,
+      "form": 25
+    },
+    "tagged": {
+      "parser": 356,
+      "hint": 23
+    },
+    "first": "2026-04-01",
+    "last": "2026-10-04"
+  },
+  "hint": {
+    "n": 33,
+    "t": {
+      "copper.studio": 11,
+      "alder.physio": 12,
+      "pale.harbour": 10
+    },
+    "ch": {
+      "form": 33
+    },
+    "tagged": {
+      "parser": 15,
+      "hint": 18
+    },
+    "first": "2026-04-17",
+    "last": "2026-09-22"
+  },
+  "export_rows": 427,
+  "unique_reports": 412,
+  "duplicate_ids": 15
+}
