@@ -4,7 +4,7 @@ title: '4471 · what it shows: two causes, one ticket'
 owner: maciej.moroz
 status: review
 reviewed: 2026-10-28
-signature: maciej.moroz
+signature: v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjI4NDkiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzE5NjkxMiwiZXhwIjoxNzkzMjgzMzEyfQ.WGawXsrtP-yxE145TaIC_l0dWaQC4nDO31d6SU3LUps
 ---
 
 The desk merged **412 reports** into #4471 and marked it known as one issue: the parser
