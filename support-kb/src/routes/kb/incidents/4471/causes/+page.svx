@@ -11,6 +11,10 @@ The desk merged **412 reports** into #4471 and marked it known as one issue: the
 reads dates month first. The export shows two causes, not one. They share a symptom —
 a booking lands on the wrong day — and nothing else.
 
+#4471 closed 5 October. The parser fix shipped: `fix(dates): parse dd/mm for eu locales`.
+The hint bug was not fixed — the `booking-v3` form is retired, so the bug leaves with the
+form. Both causes are done; the ticket's 412 reports add up to them exactly.
+
 ## The two causes
 
 <CauseTable ticket={4471} />
