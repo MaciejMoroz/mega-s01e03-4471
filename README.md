@@ -25,8 +25,9 @@ never intake's guess; intake's `intakeTag` disagrees on 38 reports).
 - `analysis/parser-ids.txt`, `analysis/hint-ids.txt` — report ids per problem
 - `analysis/summary.json` — counts per problem (tenants, channels, intake tags, date ranges)
 - `analysis/kb-export-267efc5e.zip` — the kb export as it arrived
-- `support-kb/` — the kb export unpacked, **plus one new page**:
-  `src/routes/kb/incidents/4471/causes/+page.svx` — "4471 · what it shows: two causes, one
-  ticket" (signed: `maciej.moroz`, desk ref printed by the page's `RenderStamp`)
-- `support-kb/rendered/incidents-4471-causes.html` — the page as the desk will see it:
+- `src/` — the kb export unpacked the way the support repo holds it (`apps/kb/ → src/`),
+  **plus one new page**: `src/routes/kb/incidents/4471/causes/+page.svx` — "4471 · what it
+  shows: two causes, one ticket" (signed: `maciej.moroz`, desk ref printed by the page's
+  `RenderStamp`)
+- `rendered/incidents-4471-causes.html` — the page as the desk will see it:
   a static render of the same layout, words and computed table (the `.svx` is the source; this is its output)
