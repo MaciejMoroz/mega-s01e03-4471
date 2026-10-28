@@ -11,7 +11,7 @@ tells a different story: **two problems**, one ticket.
 | `parser` | 379 | all 11 | The shared parser reads dates month first in day-first locales. The known issue; fix queued. |
 | `hint` | 33 | 3 (Alder Physio, Copper Studio, Pale Harbour — all on `booking-v3`) | The `booking-v3` form's hint says `MM/DD/YYYY`, but the form reads the date day-first, the tenant's way. A **separate bug** merged into #4471 by subject, with no ticket of its own. |
 
-Filed as GitHub issues in this repo: see the Issues tab.
+Filed as GitHub issues in this repo: [parser](https://github.com/MaciejMoroz/mega-s01e03-4471/issues/1) and [hint](https://github.com/MaciejMoroz/mega-s01e03-4471/issues/2).
 
 ## How the numbers were computed
 

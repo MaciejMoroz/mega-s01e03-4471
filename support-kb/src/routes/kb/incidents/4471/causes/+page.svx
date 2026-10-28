@@ -16,11 +16,13 @@ a booking lands on the wrong day — and nothing else.
 <CauseTable ticket={4471} />
 
 - **parser** — the shared parser reads every date month first. All 11 tenants, any channel.
-  This is the known issue; the fix is queued.
+  This is the known issue; the fix is queued. Filed as
+  [issue #1](https://github.com/MaciejMoroz/mega-s01e03-4471/issues/1): 379 reports.
 - **hint** — the `booking-v3` form prints `MM/DD/YYYY` under its date field, but the form
   reads the date the tenant's way: day first. Only Alder Physio, Copper Studio and Pale
   Harbour (all on `booking-v3`), only reports sent through the form. A different bug with
-  no ticket of its own: it was merged into #4471 by subject.
+  no ticket of its own: it was merged into #4471 by subject. Filed as
+  [issue #2](https://github.com/MaciejMoroz/mega-s01e03-4471/issues/2): 33 reports.
 
 ## Why they were merged
 
